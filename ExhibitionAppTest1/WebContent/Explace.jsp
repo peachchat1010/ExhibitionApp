@@ -35,7 +35,11 @@
 				<td><%=placename %></td>
 				<td><%=rlocation %></td>
 				<td><%=contactno %></td>
-				<td><%=times %></td>
+				<!-- 
+						times = s09e19
+								012345
+				 -->
+				<td><%=times.substring(1, 3) %> 시 ~ <%=times.substring(4, 6) %>까지</td>
 				<td><%=holiday %></td>
 				<td>
 	<form action="ExplaceModiFrm.jsp" method="get">
